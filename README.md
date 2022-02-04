@@ -2,6 +2,8 @@
 ## Vue3 JS Coffee Plan Selector ![myImage](https://img.shields.io/badge/vue-3+-3eaf7c.svg?style=flat-square&logo=vue.js) ![myImage](https://img.shields.io/badge/build-passing-green.svg?style=flat-square&logo=github)
 Demo of using Vue3 components to display and select coffee plans
 
+* View Demo on CodePen [https://codepen.io/amd64char/full/NWwRBqd]
+
 ## Installation
 * `git clone https://github.com/amd64char/vue3-coffee.git`  <= this repository
 
