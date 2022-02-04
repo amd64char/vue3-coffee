@@ -1,0 +1,246 @@
+body {
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: Roboto, sans-serif;
+    background-color: #ccdcdc;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+  }
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  h1.title {
+    text-align: center;
+    font-size: 1.875rem;
+    font-weight: 500;
+    color: #2d3336;
+  }
+
+  h2.subtitle {
+    margin: .7rem auto;
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 0;
+    max-width: 500px;
+    color: #5c6162;
+  }
+
+  .info {
+    margin-top: .25rem;
+    color: #5c6162;
+    text-align: right;
+    font-weight: 500;
+    font-size: .875rem;
+  }
+
+  /* Plan Styles */
+  .plans {
+    padding: 0 40px;
+    margin-bottom: 40px;
+  }
+
+  .plans .plan {
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: .25rem;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+
+  .plans .plan,
+  .plans .plan>.weight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .plans .plan>.weight {
+    width: 20%;
+    font-size: 1.875rem;
+    font-weight: 500;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #7dacaf;
+    color: #136268;
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+    height: 100px;
+  }
+
+  .plans .plan>.description {
+    width: 60%;
+    padding: 1rem;
+  }
+
+  .plans .plan>.description .title {
+    color: #3d4852;
+    display: block;
+    font-weight: 700;
+    margin-bottom: .25rem;
+    padding-left: 0.25rem;
+  }
+
+  .plans .plan>.description .description {
+    font-size: .875rem;
+    font-weight: 500;
+    color: #8795a1;
+    line-height: 1.5;
+  }
+
+  .plans .plan>.price {
+    width: 20%;
+    color: #09848d;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 1.5rem;
+    font-family: Crimson Text, serif;
+    font-weight: 600;
+  }
+
+  .plans .plan>.price .dollar-sign {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .plans .plan>.price .number {
+    font-size: 72px;
+    line-height: .5;
+  }
+
+  .plans .active-plan,
+  .plans .plan:hover {
+    -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
+  }
+
+  .plans .active-plan {
+    background-color: #ff8c00;
+  }
+
+  .plans .active-plan:after,
+  .plans .plan:hover:after {
+    border-width: 2px;
+    border-color: #7dacaf;
+    border-radius: .25rem;
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .plans .active-plan:before {
+    content: "\f14a";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    text-decoration: inherit;
+    color: #3d4852;
+    font-size: 15px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 17px;
+    left: 5px;
+}
+
+  /* Summary Styles */
+  .summary {
+    background-color: #fff;
+    border-radius: .5rem;
+    padding: 1.5rem;
+    -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .summary h3 {
+    font-size: 1.125rem;
+    color: #333;
+    margin-bottom: .5rem;
+  }
+
+  .summary .description,
+  .summary h3 {
+    font-weight: 500;
+    letter-spacing: .05em;
+  }
+
+  .summary .description {
+    color: #333;
+    font-size: .875rem;
+    line-height: 1.5;
+  }
+
+  .summary .price {
+    line-height: 2;
+    font-size: 1rem;
+  }
+
+  .summary hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .summary p {
+    font-size: .775rem;
+    font-style: italic;
+  }
+
+  .summary .options {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .summary .options .option {
+    margin-top: .5rem;
+    letter-spacing: .05em;
+    color: #5c6162;
+    font-weight: 500;
+    font-size: .875rem;
+  }
+
+  .summary .options .option input {
+    margin-left: 1rem;
+    margin-right: .5rem;
+  }
+
+  .summary .address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .error {
+    width: 100%;
+    margin-top: .25rem;
+    color: #e3342f;
+    text-align: right;
+    font-weight: 500;
+    font-size: .875rem;
+    color: tomato;
+  }
